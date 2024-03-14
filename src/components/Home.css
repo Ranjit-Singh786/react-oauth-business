@@ -1,0 +1,67 @@
+/* .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  } */
+  /* .App{
+    text-align: left;
+  } */
+  .rating-center{
+    text-align: center;
+  }
+  .card {
+    flex: 0 1 20%;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 1200px) {
+    .card {
+      flex-basis: 25%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .card {
+      flex-basis: 33.33%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      flex-basis: 50%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card {
+      flex-basis: 100%;
+    }
+  }
+
+
+  .spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .spinner {
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #007bff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
